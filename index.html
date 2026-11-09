@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deeksha — Product Designer</title>
+  <meta name="description" content="Deeksha is a product designer in Delhi. Product Designer at Optima Learn; rebuilt PicknPack's website end to end.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#fdfdfd">
+  <!-- link previews (LinkedIn, WhatsApp, Slack, X): image paths must be full URLs -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Deeksha — Portfolio">
+  <meta property="og:title" content="Deeksha — Product Designer">
+  <meta property="og:description" content="Product designer for edtech, e-commerce and AI. I turn complex problems into intuitive digital experiences, from research to polished UI, and build my designs in code with Claude.">
+  <meta property="og:url" content="https://deekshaxsingh.github.io/">
+  <meta property="og:image" content="https://deekshaxsingh.github.io/assets/og/og-home.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <!-- ============ TOP BAR (Figma file header) ============ -->
+  <header class="topbar">
+    <a class="topbar__file" href="./">
+      <span class="topbar__icon" aria-hidden="true"></span>
+      <span class="topbar__name">Deeksha</span>
+      <span class="topbar__path">/ Portfolio</span>
+    </a>
+    <nav class="topbar__tabs" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="https://medium.com/@deekshaxsingh" target="_blank" rel="noopener">Blogs ↗</a>
+      <a href="#playground">Playground</a>
+    </nav>
+    <div class="topbar__actions">
+      <a class="topbar__btn topbar__btn--secondary" href="https://www.linkedin.com/in/deekshaxsingh" target="_blank" rel="noopener">Let’s connect ↗</a>
+      <a class="topbar__btn topbar__btn--primary" href="assets/Deeksha-Resume.pdf" download>Resume ↓</a>
+    </div>
+  </header>
+
+  <!-- rulers stay on screen for the whole page; js/main.js keeps the numbers in step with the scroll -->
+  <span class="ruler__corner" aria-hidden="true"></span>
+  <div class="ruler ruler--top" aria-hidden="true"><span class="ruler__band"></span></div>
+  <div class="ruler ruler--left" aria-hidden="true"><span class="ruler__band"></span></div>
+
+  <!-- ============ HERO CANVAS ============ -->
+  <section class="hero is-intro" id="top" aria-labelledby="hero-title" data-canvas>
+    <p class="crumb" aria-hidden="true"><b>#</b> Home · Desktop <span data-viewport>1440 × 900</span></p>
+
+    <div class="hero__stage">
+      <div class="hero__namewrap">
+        <h1 id="hero-title" class="wordmark" data-layer="text" data-id="wordmark" data-name="deeksha" data-kind="vector">deeksh<span>a</span><span class="lens-text" aria-hidden="true">deeksha</span></h1>
+      </div>
+
+      <p class="hero__intro reveal" style="--d:.06s" data-layer="text" data-id="intro" data-name="Statement">
+        With <strong>2+ years of experience</strong>, I turn complex problems into intuitive digital experiences. From research and product strategy to design systems and polished UI, I design end-to-end for <strong>edtech, e-commerce, and AI</strong>. Lately, I’ve been taking things a step further by <strong>vibecoding with Claude and bringing my designs to life in code.</strong>
+      </p>
+
+      <div class="hero__ctas reveal" style="--d:.12s" data-layer="frame" data-id="ctas" data-name="Button">
+        <a class="btn btn--ink" href="#work">See my work ↘</a>
+      </div>
+
+      <!-- what I do, as drifting cursors (hero only) -->
+      <div class="role role--tl role--left reveal" style="--d:.3s;--c:#7b61ff" aria-hidden="true"><svg class="role__arrow" viewBox="0 0 16 16"><path d="M1.5 1.5 14.5 6.6 8.7 8.7 6.6 14.5z"/></svg><span class="role__tag">UX Research</span></div>
+      <div class="role role--tr reveal" style="--d:.34s;--c:#2f80ed" aria-hidden="true"><svg class="role__arrow" viewBox="0 0 16 16"><path d="M1.5 1.5 14.5 6.6 8.7 8.7 6.6 14.5z"/></svg><span class="role__tag">Design Systems</span></div>
+      <div class="role role--bl role--left reveal" style="--d:.38s;--c:#d6336c" aria-hidden="true"><svg class="role__arrow" viewBox="0 0 16 16"><path d="M1.5 1.5 14.5 6.6 8.7 8.7 6.6 14.5z"/></svg><span class="role__tag">AI Experiences</span></div>
+      <div class="role role--br reveal" style="--d:.42s;--c:#f2c94c;--t:#0c0c0e" aria-hidden="true"><svg class="role__arrow" viewBox="0 0 16 16"><path d="M1.5 1.5 14.5 6.6 8.7 8.7 6.6 14.5z"/></svg><span class="role__tag">Interaction Design</span></div>
+    </div>
+
+
+    <!-- comment thread: types itself, then collapses into the pin -->
+    <div class="thread" data-layer="comment" data-id="comment" data-name="Comment: Deeksha">
+      <button class="thread__pin" type="button" aria-label="Open Deeksha’s comment">D<span class="thread__count" hidden>2</span></button>
+      <div class="thread__card" role="note">
+        <p class="thread__who">Deeksha <time>just now</time></p>
+        <p class="thread__msg" data-text="hey, you found my file! the good stuff’s below ↓"></p>
+        <div class="thread__reply" hidden>
+          <p class="thread__who">Now: Optima Learn</p>
+          <p class="thread__msg" data-text="Redesigning the study flow"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- collaborators -->
+    <div class="cursor cursor--deeksha hero__cursor" aria-hidden="true">
+      <img class="cursor__arrow" src="assets/icons/cursor-pink.svg" alt="">
+      <span class="cursor__tag">Deeksha</span>
+    </div>
+
+
+    <!-- overlays (positioned by js/main.js) -->
+    <div class="measure" aria-hidden="true"></div>
+    <div class="lens-ring" aria-hidden="true"></div>
+    <div class="hover-box" aria-hidden="true"><span class="hover-box__name"></span></div>
+    <div class="sel" aria-hidden="true">
+      <i class="sel__h sel__h--tl" data-h="tl"></i><i class="sel__h sel__h--tm" data-h="tm"></i><i class="sel__h sel__h--tr" data-h="tr"></i>
+      <i class="sel__h sel__h--ml" data-h="ml"></i><i class="sel__h sel__h--mr" data-h="mr"></i>
+      <i class="sel__h sel__h--bl" data-h="bl"></i><i class="sel__h sel__h--bm" data-h="bm"></i><i class="sel__h sel__h--br" data-h="br"></i>
+      <span class="sel__badge"></span>
+    </div>
+
+    <!-- toolbar -->
+    <div class="toolbar reveal" role="toolbar" aria-label="Canvas tools">
+      <button class="tool is-on" data-tool="move" data-tip="Move  V" aria-label="Move tool"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 1.5v11.2l3-2.8 2 4.6 1.9-.8-2-4.5h4.2z"/></svg></button>
+      <button class="tool" data-tool="frame" data-tip="Frame  F" aria-label="Frame tool"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 1.5v13M11 1.5v13M1.5 5h13M1.5 11h13"/></svg></button>
+      <button class="tool" data-tool="pen" data-tip="Pen  P (redraw)" aria-label="Pen tool: redraw the name"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M8 1.5 12.5 8 8 14.5 3.5 8z"/><circle cx="8" cy="8" r="1.4"/><path d="M8 1.5v5"/></svg></button>
+      <button class="tool" data-tool="text" data-tip="Text  T" aria-label="Text tool"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 3.5h10M8 3.5V13M6 13h4"/></svg></button>
+      <button class="tool" data-tool="comment" data-tip="Comment  C" aria-label="Comment tool"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M8 2.2a5.8 5.8 0 0 0-5.1 8.6L2.2 13.8l3-.7A5.8 5.8 0 1 0 8 2.2z"/></svg></button>
+      <button class="tool" data-tool="scale" data-tip="Scale  K" aria-label="Scale tool"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2.5h4v4M13.5 2.5 8.5 7.5M6.5 13.5h-4v-4M2.5 13.5l5-5"/></svg></button>
+      <span class="toolbar__sep"></span>
+      <span class="toolbar__zoom">100%</span>
+    </div>
+  </section>
+
+  <!-- ============ SPACES & SKILLS (section break) ============ -->
+  <section class="spaces" aria-label="Problems and spaces I explore">
+    <div class="spaces__head">
+      <span class="spaces__title"><b>[02]</b> Problems &amp; spaces I explore</span>
+      <i class="spaces__rule" aria-hidden="true"></i>
+      <span class="spaces__count">6 spaces · 8 skills</span>
+    </div>
+    <div class="marquee">
+      <ul class="marquee__track" role="list">
+        <li class="chip chip--space"><i aria-hidden="true">◈</i>Education</li>
+        <li class="chip chip--space"><i aria-hidden="true">◈</i>E-commerce</li>
+        <li class="chip chip--space"><i aria-hidden="true">◈</i>AI Products</li>
+        <li class="chip chip--space"><i aria-hidden="true">◈</i>Career &amp; Interview Prep</li>
+        <li class="chip chip--space"><i aria-hidden="true">◈</i>Design Systems</li>
+        <li class="chip chip--space"><i aria-hidden="true">◈</i>Web &amp; Mobile Apps</li>
+      </ul>
+    </div>
+    <div class="marquee marquee--reverse">
+      <ul class="marquee__track" role="list">
+        <li class="chip chip--skill">User Research</li>
+        <li class="chip chip--skill">Interaction Design</li>
+        <li class="chip chip--skill">Information Architecture</li>
+        <li class="chip chip--skill">Prototyping</li>
+        <li class="chip chip--skill">Design Systems</li>
+        <li class="chip chip--skill">Product Analytics</li>
+        <li class="chip chip--skill">Visual Design</li>
+        <li class="chip chip--skill">Micro-interactions</li>
+      </ul>
+    </div>
+  </section>
+
+  <main class="canvas-main">
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section id="work" class="canvas-section section container" aria-labelledby="work-title">
+      <div class="section-head">
+        <div class="section-head__title">
+          <p class="eyebrow"><b>[03]</b> Work</p>
+          <h2 id="work-title" class="section-title">Selected work</h2>
+          <p class="section-sub">Things I’ve shipped, and a few on the way.</p>
+        </div>
+        <p class="section-head__count">04 projects</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="shot project" href="case-studies/learning-experience.html" data-cursor="Read case study">
+          <div class="project__media">
+            <p class="shot__cap"><span><b>▣</b> learning-experience.png</span><span class="shot__go">Read case study ↗</span></p>
+            <div class="shot__frame shot__frame--grad" style="--g1:#8b80f0;--g2:#4f7dff">
+              <div class="mock-browser"><div class="mock-browser__bar"><i></i><i></i><i></i><span>optimalearn.com</span></div>
+                <div class="mock-browser__view"><div class="reel" style="--T:9s;--ar:1.70" role="img" aria-label="The new Optima flow: start a task, watch the concept video, then Up Next takes you to practice">
+                  <img class="reel__frame" src="assets/img/work/optima-task-screen.png" alt="" loading="lazy">
+                  <img class="reel__frame" src="assets/img/work/optima-video.png" alt="" loading="lazy">
+                  <img class="reel__frame" src="assets/img/work/optima-upnext.png" alt="" loading="lazy">
+                  <svg class="reel__cursor reel__cursor--optima" viewBox="0 0 16 20" aria-hidden="true"><path d="M1.5 1.5v14.2l3.8-3.6 2.6 6 2.4-1-2.6-5.9h5.3z"/></svg>
+                </div></div>
+              </div>
+              <i class="h h--tl"></i><i class="h h--tm"></i><i class="h h--tr"></i><i class="h h--ml"></i><i class="h h--mr"></i><i class="h h--bl"></i><i class="h h--bm"></i><i class="h h--br"></i>
+            </div>
+          </div>
+          <div class="project__body">
+            <p class="eyebrow"><b>[01]</b> Optima Learn · Edtech</p>
+            <h3 class="project__title">Redesigning the learning experience for 5000+ MBA aspirants</h3>
+            <p class="project__desc">Simplifying the study flow through better task navigation, seamless progression, and flexible learning formats.</p>
+            <ul class="project__metrics" aria-label="Results">
+              <li><b>80% → 94%</b> concept completion</li>
+              <li><b>7×</b> more practice started</li>
+              <li><b>1s</b> to the next activity</li>
+            </ul>
+            <div class="tags"><span class="tag">Web</span><span class="tag">UX research</span><span class="tag">PostHog</span></div>
+            <span class="btn btn--ink project__cta">Read case study ↗</span>
+          </div>
+        </a>
+
+        <!-- TODO: turn back into a link when the design system case study exists -->
+        <div class="shot project is-soon" data-cursor="Coming soon" data-cursor-tone="muted">
+          <div class="project__media">
+            <p class="shot__cap"><span><b>▣</b> design-system.fig</span><span class="shot__soon">Coming soon</span></p>
+            <div class="shot__frame shot__frame--dark">
+              <div class="ds-board"><div class="reel ds-board__reel" style="--T:12s;--ar:1.539" role="img" aria-label="Optima design system components: toasts, icon states, a date picker and a modal, each selected in turn">
+                <img src="assets/img/work/design-system-mockup.png" alt="" loading="lazy">
+                <div class="ds-select"><i class="ds-select__h ds-select__h--tl"></i><i class="ds-select__h ds-select__h--tr"></i><i class="ds-select__h ds-select__h--bl"></i><i class="ds-select__h ds-select__h--br"></i>
+                  <span class="ds-select__tag"><b>Toast</b><b>Icon states</b><b>Date picker</b><b>Modal</b></span>
+                </div>
+              </div></div>
+              <span class="shot__badge shot__badge--right">Coming soon</span>
+              <i class="h h--tl"></i><i class="h h--tm"></i><i class="h h--tr"></i><i class="h h--ml"></i><i class="h h--mr"></i><i class="h h--bl"></i><i class="h h--bm"></i><i class="h h--br"></i>
+            </div>
+          </div>
+          <div class="project__body">
+            <p class="eyebrow"><b>[02]</b> Optima Learn · Design system</p>
+            <h3 class="project__title">Building Optima’s Design System</h3>
+            <p class="project__desc">Creating a scalable design foundation with reusable components, design tokens, and consistent light and dark themes across platforms.</p>
+            <div class="tags"><span class="tag">Design system</span><span class="tag">Mobile app</span></div>
+            <span class="btn project__cta project__cta--soon">Case study coming soon</span>
+          </div>
+        </div>
+
+        <a class="shot project" href="https://medium.com/@deekshaxsingh/redesigning-picknpack-a-ux-ui-case-study-for-an-e-commerce-website-e2cd00944172" target="_blank" rel="noopener" data-cursor="Read on Medium">
+          <div class="project__media">
+            <p class="shot__cap"><span><b>▣</b> picknpack-revamp.png</span><span class="shot__go">Read on Medium ↗</span></p>
+            <div class="shot__frame shot__frame--grad" style="--g1:#1d4f73;--g2:#6a3fd1">
+              <div class="mock-browser"><div class="mock-browser__bar"><i></i><i></i><i></i><span></span></div>
+                <div class="mock-browser__view"><div class="reel reel--two" style="--T:10s;--ar:1.59" role="img" aria-label="The redesigned PicknPack site: from the homepage into a product listing with clear prices and Buy Now buttons">
+                  <img class="reel__frame" src="assets/img/work/picknpack-home.png" alt="" loading="lazy">
+                  <img class="reel__frame" src="assets/img/work/picknpack-listing.png" alt="" loading="lazy">
+                  <svg class="reel__cursor reel__cursor--pnp" viewBox="0 0 16 20" aria-hidden="true"><path d="M1.5 1.5v14.2l3.8-3.6 2.6 6 2.4-1-2.6-5.9h5.3z"/></svg>
+                </div></div>
+              </div>
+              <i class="h h--tl"></i><i class="h h--tm"></i><i class="h h--tr"></i><i class="h h--ml"></i><i class="h h--mr"></i><i class="h h--bl"></i><i class="h h--bm"></i><i class="h h--br"></i>
+            </div>
+          </div>
+          <div class="project__body">
+            <p class="eyebrow"><b>[03]</b> PicknPack · E-commerce</p>
+            <h3 class="project__title">Revamping PicknPack for a smoother shopping experience</h3>
+            <p class="project__desc">Led a <strong>full redesign</strong> of the desktop site and designed its <strong>first dedicated mobile version</strong>.</p>
+            <ul class="project__metrics" aria-label="Results">
+              <li><b>+42.8%</b> user visits</li>
+              <li><b>−30%</b> bounce rate</li>
+              <li><b>−80%</b> enquiry calls</li>
+            </ul>
+            <div class="tags"><span class="tag">E-commerce</span><span class="tag">Conversion</span></div>
+            <span class="btn btn--ink project__cta">Read on Medium ↗</span>
+          </div>
+        </a>
+
+        <a class="shot project" href="https://medium.com/@deekshaxsingh/vetcare-ux-case-study-designing-a-seamless-pet-healthcare-experience-from-scratch-39fe60d25f04" target="_blank" rel="noopener" data-cursor="Read on Medium">
+          <div class="project__media">
+            <p class="shot__cap"><span><b>▣</b> vetcare-app.png</span><span class="shot__go">Read on Medium ↗</span></p>
+            <div class="shot__frame shot__frame--grad shot__frame--phones" style="--g1:#d9ecff;--g2:#8fc3ff">
+              <div class="phones" role="img" aria-label="The VetCare app moving from the home screen to emergency clinics to a pet’s profile">
+                <div class="phone phone--side phone--left"><div class="phone__screen"><img src="assets/img/work/vetcare-pet.png" alt="" loading="lazy"></div></div>
+                <div class="phone phone--side phone--right"><div class="phone__screen"><img src="assets/img/work/vetcare-emergency.png" alt="" loading="lazy"></div></div>
+                <div class="phone phone--main"><div class="phone__screen reel reel--slide" style="--T:9s">
+                  <img class="reel__frame" src="assets/img/work/vetcare-home.png" alt="" loading="lazy">
+                  <img class="reel__frame" src="assets/img/work/vetcare-emergency.png" alt="" loading="lazy">
+                  <img class="reel__frame" src="assets/img/work/vetcare-pet.png" alt="" loading="lazy">
+                </div></div>
+              </div>
+              <i class="h h--tl"></i><i class="h h--tm"></i><i class="h h--tr"></i><i class="h h--ml"></i><i class="h h--mr"></i><i class="h h--bl"></i><i class="h h--bm"></i><i class="h h--br"></i>
+            </div>
+          </div>
+          <div class="project__body">
+            <p class="eyebrow"><b>[04]</b> Personal project · Healthcare</p>
+            <h3 class="project__title">VetCare: designing pet healthcare from scratch</h3>
+            <p class="project__desc">A mobile app to <strong>find and book trusted vets nearby</strong>, get emergency help fast, and keep each pet’s profile in one place.</p>
+            <div class="tags"><span class="tag">Mobile app</span><span class="tag">0-1</span></div>
+            <span class="btn btn--ink project__cta">Read on Medium ↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ PLAYGROUND ============ -->
+    <section id="playground" class="canvas-section section container" aria-labelledby="pg-title">
+      <div class="section-head">
+        <div class="section-head__title">
+          <p class="eyebrow"><b>[04]</b> Playground</p>
+          <h2 id="pg-title" class="section-title">Playground</h2>
+          <p class="section-sub">From my project graveyard, the ones that survived. Small experiments in motion, sound and interaction, built for fun and kept because they made people smile.</p>
+        </div>
+      </div>
+
+      <div class="pg-grid">
+        <a class="shot pg-card" href="playground/mood-weather.html" data-cursor="Click to view">
+          <p class="shot__cap"><span><b>▣</b> mood-weather</span><span class="shot__go">Play ↗</span></p>
+          <div class="shot__frame pg-card__preview pg-card__preview--mood">
+            <img class="pg-card__art" src="assets/img/pg-mood-art.svg" alt="Badal, a small cloud character, holding an umbrella in the rain">
+            <span class="pg-card__temp">14°</span>
+            <span class="pg-card__cond">Steady rain · feeling low</span>
+            <i class="h h--tl"></i><i class="h h--tm"></i><i class="h h--tr"></i><i class="h h--ml"></i><i class="h h--mr"></i><i class="h h--bl"></i><i class="h h--bm"></i><i class="h h--br"></i>
+          </div>
+          <div class="comment" aria-hidden="true">
+            <span class="comment__avatar">D</span>
+            psst, tap Badal. he talks back ↓
+          </div>
+          <div class="pg-card__text">
+            <h3 class="h3">Mood Weather</h3>
+            <p class="pg-card__desc">Pick how you feel and the sky changes with you. Rain, fog, snow, and a small friend named Badal.</p>
+          </div>
+          <div class="tags"><span class="tag">Canvas</span><span class="tag">Web audio</span></div>
+        </a>
+
+        <article class="shot pg-card is-soon" data-cursor="Coming soon" data-cursor-tone="muted">
+          <p class="shot__cap"><span><b>▣</b> physics-name-tag</span><span class="shot__soon">Coming soon</span></p>
+          <div class="shot__frame pg-card__preview">
+            <div class="pg-letters" aria-hidden="true">
+              <span style="left:4.9%;top:63.3%;transform:rotate(6deg)">d</span>
+              <span style="left:21.1%;top:64.6%;transform:rotate(-8deg)">e</span>
+              <span style="left:32.5%;top:64%;transform:rotate(7deg)">e</span>
+              <span style="left:48.6%;top:64.2%;transform:rotate(-5deg)">k</span>
+              <span style="left:10.1%;top:36%;transform:rotate(16deg)">s</span>
+              <span style="left:29.6%;top:30.7%;transform:rotate(-10deg)">h</span>
+              <span class="accent" style="left:42.7%;top:38%;transform:rotate(5deg)">a</span>
+            </div>
+            <i class="h h--tl"></i><i class="h h--tm"></i><i class="h h--tr"></i><i class="h h--ml"></i><i class="h h--mr"></i><i class="h h--bl"></i><i class="h h--bm"></i><i class="h h--br"></i>
+          </div>
+          <div class="pg-card__text">
+            <h3 class="h3">Physics Name Tag</h3>
+            <p class="pg-card__desc">My name, falling in with gravity. Drag, throw and stack the letters.</p>
+          </div>
+          <div class="tags"><span class="tag">Matter.js</span><span class="tag">Physics</span></div>
+        </article>
+
+        <article class="shot pg-card is-soon" data-cursor="Coming soon" data-cursor-tone="muted">
+          <p class="shot__cap"><span><b>▣</b> toggle-zoo</span><span class="shot__soon">Coming soon</span></p>
+          <div class="shot__frame pg-card__preview">
+            <img class="pg-card__art" src="assets/img/pg-toggle-art.svg" alt="">
+            <i class="h h--tl"></i><i class="h h--tm"></i><i class="h h--tr"></i><i class="h h--ml"></i><i class="h h--mr"></i><i class="h h--bl"></i><i class="h h--bm"></i><i class="h h--br"></i>
+          </div>
+          <div class="pg-card__text">
+            <h3 class="h3">Toggle Zoo</h3>
+            <p class="pg-card__desc">Ten on/off switches that refuse to be boring.</p>
+          </div>
+          <div class="tags"><span class="tag">Micro-interactions</span></div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <p class="eyebrow"><b>[05]</b> Let’s talk</p>
+      <h2 class="section-title site-footer__title">Got a messy problem?<br><span>I’d love to untangle it.</span></h2>
+      <p class="section-sub site-footer__sub">Open to product design roles and freelance projects. I reply within a day.</p>
+      <div class="site-footer__ctas">
+        <a class="btn btn--ink site-footer__hello" href="mailto:deekshaxsingh@gmail.com" data-copy-email="deekshaxsingh@gmail.com" data-cursor="Copy email">Say hello ↗</a>
+        <a class="btn btn--secondary" href="https://www.linkedin.com/in/deekshaxsingh" target="_blank" rel="noopener">LinkedIn <img src="assets/icons/arrow-up-right.svg" alt=""></a>
+        <a class="btn btn--secondary" href="assets/Deeksha-Resume.pdf" download>Resume ↓</a>
+        <div class="cursor cursor--deeksha site-footer__cursor" aria-hidden="true">
+          <img class="cursor__arrow" src="assets/icons/cursor-pink.svg" alt="">
+          <span class="cursor__tag">Deeksha</span>
+        </div>
+      </div>
+      <div class="site-footer__bar">
+        <span>© 2026 Deeksha · designed in Figma, built in code</span>
+        <span class="site-footer__clock">Delhi · <time data-clock>--:--</time> IST</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- the visitor's own cursor -->
+  <div class="you-cursor cursor" aria-hidden="true">
+    <img class="cursor__arrow" src="assets/icons/cursor-you.svg" alt="">
+    <span class="cursor__tag">You</span>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

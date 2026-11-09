@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redesigning the learning experience — Deeksha</title>
+  <meta name="description" content="Case study: redesigning Optima Learn's learning experience for a seamless study flow.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#fdfdfd">
+  <!-- link previews (LinkedIn, WhatsApp, Slack, X): image paths must be full URLs -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Deeksha — Portfolio">
+  <meta property="og:title" content="Redesigning the learning experience — Deeksha">
+  <meta property="og:description" content="Case study: making task completion part of the study flow for 5000+ MBA aspirants on Optima Learn. Concept completion 80% → 94%, practice started on 7× more topics.">
+  <meta property="og:url" content="https://deekshaxsingh.github.io/case-studies/learning-experience.html">
+  <meta property="og:image" content="https://deekshaxsingh.github.io/assets/og/og-case-study.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="cs-page">
+
+  <header class="topbar">
+    <a class="topbar__file" href="../">
+      <span class="topbar__icon" aria-hidden="true"></span>
+      <span class="topbar__name">Deeksha</span>
+      <span class="topbar__path">/ Work / Learning experience</span>
+    </a>
+    <span></span>
+    <div class="topbar__actions">
+      <a class="topbar__back" href="../#work"><img src="../assets/icons/arrow-left.svg" alt="">Back to work</a>
+      <a class="topbar__btn topbar__btn--secondary" href="https://www.linkedin.com/in/deekshaxsingh" target="_blank" rel="noopener">Let’s connect ↗</a>
+      <a class="topbar__btn topbar__btn--primary" href="../assets/Deeksha-Resume.pdf" download>Resume ↓</a>
+    </div>
+  </header>
+
+  <!-- same rulers as the homepage; js/main.js numbers them and shows the band for the frame you point at -->
+  <span class="ruler__corner" aria-hidden="true"></span>
+  <div class="ruler ruler--top" aria-hidden="true"><span class="ruler__band"></span></div>
+  <div class="ruler ruler--left" aria-hidden="true"><span class="ruler__band"></span></div>
+
+  <!-- ============ HEADER (dot grid, like the homepage hero) ============ -->
+  <header class="cs-hero">
+    <p class="crumb" aria-hidden="true"><b>#</b> Work · Learning experience</p>
+    <div class="container">
+      <p class="eyebrow"><b>[Case study]</b> Optima Learn · Edtech</p>
+      <h1 class="cs-title">Redesigning the learning experience<br> <span>for a seamless study flow</span></h1>
+      <p class="section-sub">Simplifying the study flow for 5000+ MBA aspirants through better task navigation, seamless progression, and flexible learning formats.</p>
+    </div>
+
+    <!-- impact band: headline numbers from [12] Results (PostHog, 41 days before vs after launch) -->
+    <div class="cs-stats" role="group" aria-label="Impact">
+      <div class="container cs-stats__row">
+        <p class="cs-stats__lead">Small team.<br><b>Real-world impact.</b></p>
+        <div class="cs-stat"><p class="cs-stat__num">80% <span>→</span> 94%</p><p class="cs-stat__label">concept completion, old → new</p></div>
+        <div class="cs-stat"><p class="cs-stat__num">7<span>×</span></p><p class="cs-stat__label">more topics where practice was started</p></div>
+        <div class="cs-stat"><p class="cs-stat__num">1<span>s</span></p><p class="cs-stat__label">median from concept to practice</p></div>
+        <svg class="cs-stats__mark" viewBox="0 0 40 40" aria-hidden="true"><g stroke="currentColor" stroke-width="7" stroke-linecap="round"><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4 9.4 30.6"/></g></svg>
+      </div>
+    </div>
+
+    <div class="container">
+      <dl class="cs-meta">
+        <div><dt>Role</dt><dd>Founding Product Designer</dd></div>
+        <div><dt>Team</dt><dd>Solo designer, with developers &amp; founder</dd></div>
+        <div><dt>Scope</dt><dd>UX &amp; UI, research to final product</dd></div>
+        <div><dt>Timeline</dt><dd>2 weeks</dd></div>
+      </dl>
+      <figure class="shot cs-shot cs-shot--hero">
+        <figcaption class="shot__cap"><span><b>▣</b> learning-experience.png</span><span>iPad · task map</span></figcaption>
+        <div class="shot__frame shot__frame--tint"><img src="../assets/img/cs-learning/hero-ipad.png" alt="The redesigned Optima Learn task map shown on an iPad" width="1062" height="648"></div>
+      </figure>
+    </div>
+  </header>
+
+  <!-- ============ BODY: contents rail + sections ============ -->
+  <div class="container cs-layout">
+
+    <!-- contents, styled like a layers list -->
+    <nav class="cs-toc" aria-label="Contents">
+      <p class="cs-toc__head">Contents</p>
+      <ol>
+        <li><a href="#overview"><b>01</b>Overview</a></li>
+        <li><a href="#research"><b>02</b>Research</a></li>
+        <li><a href="#challenge"><b>03</b>Design challenge</a></li>
+        <li><a href="#friction"><b>04</b>UX audit</a></li>
+        <li><a href="#direction"><b>05</b>Redesign direction</a></li>
+        <li><a href="#task-nav"><b>06</b>Task navigation</a></li>
+        <li><a href="#completion"><b>07</b>Completion</a></li>
+        <li><a href="#video"><b>08</b>Video &amp; theory</a></li>
+        <li><a href="#personalised"><b>09</b>Personalised theory</a></li>
+        <li><a href="#states"><b>10</b>Learning states</a></li>
+        <li><a href="#flow"><b>11</b>New learning flow</a></li>
+        <li><a href="#validation"><b>12</b>Validation</a></li>
+        <li><a href="#measure"><b>13</b>Results</a></li>
+        <li><a href="#reflection"><b>14</b>Reflection</a></li>
+      </ol>
+    </nav>
+
+    <main class="cs-body">
+
+      <!-- Overview -->
+      <section class="cs-section" id="overview" aria-labelledby="overview-title">
+        <p class="eyebrow"><b>[01]</b> Overview</p>
+        <h2 id="overview-title" class="section-title">Project overview</h2>
+        <div class="cs-text">
+          <p>To understand how students moved through their lessons, I watched session replays of the old screen and reviewed analytics in PostHog. After designing the new flow, I interviewed students to check they could get through it on their own.</p>
+          <p>These activities helped inform our review of how students interacted with learning tasks and progressed through the platform. One of the areas we focused on was the task completion experience across learning activities.</p>
+          <p>In the existing structure, students had to manually mark a task as complete before moving to the next one. This created an additional interaction between completing an activity and progressing to the next part.</p>
+          <p>The redesign focused on simplifying this transition and making task completion feel more naturally connected to the learning journey.</p>
+        </div>
+      </section>
+
+      <!-- Research (before the redesign) -->
+      <section class="cs-section" id="research" aria-labelledby="research-title">
+        <p class="eyebrow"><b>[02]</b> Research</p>
+        <h2 id="research-title" class="section-title">What the old flow was doing</h2>
+        <p class="section-sub">I watched <strong>20+ session replays</strong> of the old learning screen to see how students actually moved through a topic, and checked the numbers in PostHog.</p>
+        <div class="cs-grid cs-grid--3">
+          <div class="cs-card"><p class="cs-card__num">[01] From the replays</p><p class="cs-card__title">Students skipped Mark done</p><p>Most students clicked “Go to next task” and skipped the Mark done button, so their progress wasn’t tracked even when they had finished.</p></div>
+          <div class="cs-card"><p class="cs-card__num">[02] From the replays</p><p class="cs-card__title">Practice lived somewhere else</p><p>The old design sent students to a different tab for practice, which broke the study loop between learning a concept and practising it.</p></div>
+          <div class="cs-card"><p class="cs-card__num">[03] From PostHog</p><p class="cs-card__title">The numbers agreed</p><p>In the 41 days before launch, practice was started on only <strong class="cs-hl">126 topics</strong>, by <strong class="cs-hl">42 learners</strong>, and only <strong class="cs-hl">33%</strong> of it was completed.</p></div>
+        </div>
+        <div class="cs-diagram">
+          <div class="cs-diagram__row">
+            <p class="cs-diagram__label">Study loops I looked at</p>
+            <ul class="cs-steps cs-steps--plain"><li class="cs-step">Coursera</li><li class="cs-step">RevisionDojo</li><li class="cs-step">Khan Academy</li></ul>
+          </div>
+          <div class="cs-diagram__row">
+            <p class="cs-diagram__label cs-diagram__label--brand">What I took away</p>
+            <p class="cs-diagram__text">Keep learning and practice in <strong>one linear sequence</strong>, so finishing one step leads straight into the next. I used Claude to speed up the scan, then went through each study loop myself.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design challenge -->
+      <section class="cs-section" id="challenge" aria-labelledby="challenge-title">
+        <p class="eyebrow"><b>[03]</b> Design challenge</p>
+        <div class="cs-challenge">
+          <h2 id="challenge-title" class="cs-challenge__q">How might we simplify task completion so students can finish an activity and move forward <span>without an unnecessary additional action?</span></h2>
+          <img src="../assets/img/cs-learning/challenge-illustration.png" alt="Illustration of Deeksha thinking, hand on chin" width="351" height="351" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Friction points -->
+      <section class="cs-section" id="friction" aria-labelledby="friction-title">
+        <p class="eyebrow"><b>[04]</b> UX audit</p>
+        <h2 id="friction-title" class="section-title">Identifying friction points</h2>
+        <p class="section-sub">Before redesigning, I broke down the existing learning screen to see where navigation and progression were creating unnecessary interactions.</p>
+        <figure class="shot cs-shot cs-shot--padded">
+          <figcaption class="shot__cap"><span><b>▣</b> friction-points.png</span><span>Old learning screen</span></figcaption>
+          <div class="shot__frame"><img src="../assets/img/cs-learning/friction-points.png" alt="The old learning screen annotated with four friction points: embedded task sidebar, separate completion action, disconnected progression, and three same-colour CTAs" width="1155" height="953" loading="lazy"></div>
+        </figure>
+      </section>
+
+      <!-- Redesign direction -->
+      <section class="cs-section" id="direction" aria-labelledby="direction-title">
+        <p class="eyebrow"><b>[05]</b> Redesign direction</p>
+        <h2 id="direction-title" class="section-title">Redesign direction</h2>
+        <p class="section-sub">The redesign focused on removing unnecessary steps while giving each part of the learning experience a clearer purpose.</p>
+        <div class="cs-grid cs-grid--2">
+          <div class="cs-card"><p class="cs-card__num">[01]</p><p class="cs-card__title">Separate task navigation from learning</p><p>Move the task structure into its own screen, giving learning more focused space.</p></div>
+          <div class="cs-card"><p class="cs-card__num">[02]</p><p class="cs-card__title">Make progression part of completion</p><p>Connect completing an activity with moving to what comes next.</p></div>
+          <div class="cs-card"><p class="cs-card__num">[03]</p><p class="cs-card__title">Bring learning formats together</p><p>A more connected experience for video and written theory.</p></div>
+          <div class="cs-card"><p class="cs-card__num">[04]</p><p class="cs-card__title">Support different ways of learning</p><p>Introduce Standard Theory and explore Personalised Theory without a separate flow.</p></div>
+          <div class="cs-card"><p class="cs-card__num">[05]</p><p class="cs-card__title">Use different buttons</p><p>Use different buttons for different actions, using primary CTA in different sizes was not making the primary action clear.</p></div>
+        </div>
+      </section>
+
+      <!-- Task navigation -->
+      <section class="cs-section" id="task-nav" aria-labelledby="task-nav-title">
+        <p class="eyebrow"><b>[06]</b> Task navigation</p>
+        <h2 id="task-nav-title" class="section-title">Reimagining task navigation</h2>
+        <p class="section-sub">Instead of keeping the whole task structure permanently beside the learning content, I moved it into a <strong>dedicated task screen</strong>. The learning screen could focus on the activity itself, while the task screen showed where the student is in their journey.</p>
+        <figure class="shot cs-shot">
+          <figcaption class="shot__cap"><span><b>▣</b> task-map.png</span><span>New task screen</span></figcaption>
+          <div class="shot__frame"><img src="../assets/img/cs-learning/task-map.png" alt="The new task screen: the topic's videos, practice and quizzes in order, with a Start button on the first and the next topic below" width="1200" height="722" loading="lazy"></div>
+        </figure>
+        <ul class="cs-notes">
+          <li>The goal wasn’t to remove information, but to give navigation its own space instead of competing with the learning content.</li>
+          <li><strong>Structured learning sequence:</strong> Students move from concept videos to practice and quizzes, followed by the next concept.</li>
+          <li><strong>Reduced clutter:</strong> The new layout creates a clearer hierarchy and makes the learning journey easier to follow.</li>
+        </ul>
+      </section>
+
+      <!-- Completion -->
+      <section class="cs-section" id="completion" aria-labelledby="completion-title">
+        <p class="eyebrow"><b>[07]</b> Completion</p>
+        <h2 id="completion-title" class="section-title">Making completion part of progression</h2>
+        <p class="section-sub">The next problem was more fundamental: completing a task and moving forward were two separate actions. The primary CTA now handles <strong>completion and progression together</strong>.</p>
+        <div class="cs-diagram" role="img" aria-label="Flow comparison: previously, completing an activity was followed by Mark as done and Go to next task. Redesigned, completing an activity leads straight to the next activity, and the button goes from Mark as watched to Up Next · Practice.">
+          <div class="cs-diagram__row">
+            <p class="cs-diagram__label">Previously</p>
+            <ol class="cs-steps">
+              <li class="cs-step">Complete activity</li>
+              <li class="cs-step cs-step--cut">Mark as done</li>
+              <li class="cs-step cs-step--cut">Go to next task</li>
+            </ol>
+          </div>
+          <div class="cs-diagram__row">
+            <p class="cs-diagram__label cs-diagram__label--brand">Redesigned</p>
+            <ol class="cs-steps">
+              <li class="cs-step">Complete activity</li>
+              <li class="cs-step cs-step--on">Next activity</li>
+            </ol>
+          </div>
+          <div class="cs-diagram__row">
+            <p class="cs-diagram__label">The button</p>
+            <ol class="cs-steps">
+              <li class="cs-step cs-step--ghost">Mark as watched</li>
+              <li class="cs-step cs-step--ghost"><i class="cs-spin" aria-hidden="true"></i>Saving</li>
+              <li class="cs-step cs-step--btn">Up Next · Practice</li>
+            </ol>
+          </div>
+        </div>
+
+        <p class="cs-tag">Before</p>
+        <figure class="shot cs-shot cs-shot--narrow">
+          <figcaption class="shot__cap"><span><b>▣</b> completion-before.png</span><span>Three primary buttons</span></figcaption>
+          <div class="shot__frame"><img src="../assets/img/cs-learning/completion-before-ctas.png" alt="The old theory content with three same-colour primary buttons: Personalised theory, Mark done &amp; next, and Go to next task" width="600" height="659" loading="lazy"></div>
+        </figure>
+        <div class="cs-issue"><img src="../assets/icons/thumbs-down.svg" alt=""><p><strong>Unclear action hierarchy:</strong> Three prominent CTAs competed for attention, making the intended next step less obvious.</p></div>
+        <div class="cs-issue"><img src="../assets/icons/thumbs-down.svg" alt=""><p><strong>Completion friction:</strong> Users navigated to the next task without marking the current one as complete, leaving their progress inaccurately tracked despite finishing the content.</p></div>
+
+        <p class="cs-tag cs-tag--after">After</p>
+        <figure class="shot cs-shot">
+          <figcaption class="shot__cap"><span><b>▣</b> completion-after-1.png</span><span>Concept video</span></figcaption>
+          <div class="shot__frame"><img src="../assets/img/cs-learning/completion-after-1.png" alt="The new concept video screen with a single primary button" width="1200" height="697" loading="lazy"></div>
+        </figure>
+        <figure class="shot cs-shot">
+          <figcaption class="shot__cap"><span><b>▣</b> completion-after-2.png</span><span>After the video ends</span></figcaption>
+          <div class="shot__frame"><img src="../assets/img/cs-learning/completion-after-2.png" alt="The new concept screen after finishing the video" width="1200" height="703" loading="lazy"></div>
+        </figure>
+
+        <h3 class="cs-h3">One CTA, contextual progression</h3>
+        <div class="cs-grid cs-grid--3 cs-ctas" role="img" aria-label="The primary button label changes by activity type: after a video it says Up Next · Solved example 1, in practice Up Next · Practice, and in a quiz Up Next · Quiz">
+          <div class="cs-card"><p class="cs-card__num">Video</p><span class="cs-step cs-step--btn">Up Next · Solved example 1</span></div>
+          <div class="cs-card"><p class="cs-card__num">Practice</p><span class="cs-step cs-step--btn">Up Next · Practice</span></div>
+          <div class="cs-card"><p class="cs-card__num">Quiz</p><span class="cs-step cs-step--btn">Up Next · Quiz</span></div>
+        </div>
+      </section>
+
+      <!-- Video & theory -->
+      <section class="cs-section" id="video" aria-labelledby="video-title">
+        <p class="eyebrow"><b>[08]</b> Video &amp; theory</p>
+        <h2 id="video-title" class="section-title">Bringing video &amp; theory together</h2>
+        <p class="section-sub">As video learning was introduced alongside written theory, I designed them as <strong>two ways of engaging with the same concept</strong> rather than separate destinations. Students can switch between watching and reading without leaving the learning experience.</p>
+        <p class="cs-tag">Before</p>
+        <p class="cs-text"><strong>Theory only:</strong> the old screen (shown in <a class="cs-link" href="#friction">[04] UX audit</a>) offered only theory for each chapter and concept. The updated flow introduced concept videos alongside theory, giving learners the flexibility to choose their preferred learning format while retaining access to the original theory content.</p>
+        <p class="cs-tag cs-tag--after">After</p>
+        <figure class="shot cs-shot cs-shot--narrow">
+          <figcaption class="shot__cap"><span><b>▣</b> watch-read-switch.png</span><span>Watch / Read switch</span></figcaption>
+          <div class="shot__frame"><img src="../assets/img/cs-learning/watch-read-switch.png" alt="The concept screen with a Watch Video and Read Theory switch above the video" width="662" height="420" loading="lazy"></div>
+        </figure>
+      </section>
+
+      <!-- Personalised theory -->
+      <section class="cs-section" id="personalised" aria-labelledby="personalised-title">
+        <p class="eyebrow"><b>[09]</b> Personalised theory</p>
+        <h2 id="personalised-title" class="section-title">Exploring personalised theory</h2>
+        <p class="section-sub">Alongside Standard Theory, we explored Personalised Theory, where explanations use examples related to a student’s interests. I kept both within the <strong>same learning structure</strong> so personalisation wouldn’t introduce an entirely new way of learning.</p>
+        <figure class="shot cs-shot">
+          <figcaption class="shot__cap"><span><b>▣</b> personalised-popup.png</span><span>Interests pop-up</span></figcaption>
+          <div class="shot__frame"><img src="../assets/img/cs-learning/personalised-popup.png" alt="Pop-up asking students about their interests for personalised theory" width="1200" height="696" loading="lazy"></div>
+        </figure>
+        <div class="cs-grid cs-grid--2">
+          <div class="cs-card"><p class="cs-card__title">Standard Theory</p><p>A clear, structured explanation of the concept.</p></div>
+          <div class="cs-card cs-card--tint"><p class="cs-card__title">Personalised Theory</p><p>Examples tailored around the student’s interests.</p></div>
+        </div>
+        <div class="cs-decisions">
+          <p class="cs-decisions__head">Learning format and theory mode became separate decisions</p>
+          <div class="cs-decision">
+            <span class="segmented" aria-hidden="true"><span class="is-on">Watch</span><span>Read</span></span>
+            <p>→&nbsp; How do I want to learn?</p>
+          </div>
+          <div class="cs-decision">
+            <span class="segmented" aria-hidden="true"><span class="is-on">Standard</span><span>Personalised</span></span>
+            <p>→&nbsp; How do I want the concept explained?</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning states -->
+      <section class="cs-section" id="states" aria-labelledby="states-title">
+        <p class="eyebrow"><b>[10]</b> Learning states</p>
+        <h2 id="states-title" class="section-title">Treating the experience as a system</h2>
+        <p class="section-sub">Once the core interaction was defined, I mapped every state the learning experience needed to support, rather than designing each screen independently.</p>
+        <div class="cs-diagram cs-diagram--table" role="img" aria-label="Map of learning states. Watch: video playing, video completed, next video. Read: standard theory, personalised theory, switching modes. Practice: current question, complete, next question. Progression: current activity, completed, next activity.">
+          <div class="cs-diagram__row"><p class="cs-diagram__label">Watch</p><ol class="cs-steps"><li class="cs-step">Video playing</li><li class="cs-step cs-step--tint">Video completed</li><li class="cs-step cs-step--on">Next video</li></ol></div>
+          <div class="cs-diagram__row"><p class="cs-diagram__label">Read</p><ol class="cs-steps"><li class="cs-step">Standard Theory</li><li class="cs-step cs-step--tint">Personalised Theory</li><li class="cs-step cs-step--on">Switching modes</li></ol></div>
+          <div class="cs-diagram__row"><p class="cs-diagram__label">Practice</p><ol class="cs-steps"><li class="cs-step">Current question</li><li class="cs-step cs-step--tint">Complete</li><li class="cs-step cs-step--on">Next question</li></ol></div>
+          <div class="cs-diagram__row"><p class="cs-diagram__label">Progression</p><ol class="cs-steps"><li class="cs-step">Current activity</li><li class="cs-step cs-step--tint">Completed</li><li class="cs-step cs-step--on">Next activity</li></ol></div>
+        </div>
+        <!-- TODO: learning state map / flow diagram image (empty placeholder in Figma) -->
+      </section>
+
+      <!-- New learning flow -->
+      <section class="cs-section" id="flow" aria-labelledby="flow-title">
+        <p class="eyebrow"><b>[11]</b> New learning flow</p>
+        <h2 id="flow-title" class="section-title">The new learning flow</h2>
+        <ol class="cs-flow">
+          <li class="chip chip--space"><i>◈</i>Choose a task</li>
+          <li class="chip chip--space"><i>◈</i>Learn: watch or read</li>
+          <li class="chip chip--space"><i>◈</i>Complete the activity</li>
+          <li class="chip chip--space is-on"><i>◈</i>Move straight to what’s next</li>
+          <li class="chip chip--space"><i>◈</i>Keep learning</li>
+        </ol>
+        <!-- TODO: strongest final redesigned learning screen or prototype (empty placeholder in Figma) -->
+      </section>
+
+      <!-- Validation (after the redesign) -->
+      <section class="cs-section" id="validation" aria-labelledby="validation-title">
+        <p class="eyebrow"><b>[12]</b> Validation</p>
+        <h2 id="validation-title" class="section-title">Testing it with students</h2>
+        <p class="section-sub">Once the new screens were designed, I interviewed 2 students and gave each of them the same task.</p>
+        <div class="cs-diagram">
+          <div class="cs-diagram__row">
+            <p class="cs-diagram__label">The task</p>
+            <ol class="cs-steps"><li class="cs-step">Complete one topic</li><li class="cs-step">Do its practice</li><li class="cs-step cs-step--on">Start the quiz</li></ol>
+          </div>
+          <div class="cs-diagram__row">
+            <p class="cs-diagram__label cs-diagram__label--brand">What happened</p>
+            <p class="cs-diagram__text">They found it easy to complete. With every step arranged in <strong>one linear sequence</strong>, there was always one obvious next thing to do.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results (PostHog, web app topic learn flow) -->
+      <section class="cs-section" id="measure" aria-labelledby="measure-title">
+        <p class="eyebrow"><b>[13]</b> Results</p>
+        <h2 id="measure-title" class="section-title">What changed after launch</h2>
+        <p class="section-sub">Measured in PostHog over the first 41 days after launch, compared with the 41 days before. Results 02–05 cover the new design only.</p>
+        <div class="cs-results">
+          <div class="cs-card cs-result cs-result--wide">
+            <p class="cs-card__num">[01] Completion rate, old → new</p>
+            <div class="cs-compare">
+              <div class="cs-compare__row">
+                <p class="cs-compare__name">Concept<span>Read the theory or watched the video</span></p>
+                <div class="cs-compare__bars">
+                  <span class="cs-bar cs-bar--old" style="--v:80%"><b>80%</b></span>
+                  <span class="cs-bar cs-bar--new" style="--v:94%"><b>94%</b></span>
+                </div>
+              </div>
+              <div class="cs-compare__row">
+                <p class="cs-compare__name">Practice<span>Attempted every question</span></p>
+                <div class="cs-compare__bars">
+                  <span class="cs-bar cs-bar--old" style="--v:33%"><b>33%</b></span>
+                  <span class="cs-bar cs-bar--new" style="--v:51%"><b>51%</b></span>
+                </div>
+              </div>
+            </div>
+            <p class="cs-result__note"><strong>Practice was started on 7× more topics</strong> (126 → 929), by 115 learners instead of 42. Counted per topic a student opened; topics they had already finished are left out.</p>
+            <p class="cs-legend"><i class="cs-legend__old"></i>Old design <i class="cs-legend__new"></i>New design</p>
+          </div>
+          <div class="cs-card cs-result">
+            <p class="cs-card__num">[02] Drop-off between activities</p>
+            <p class="cs-result__num">2 <span>in</span> 3</p>
+            <p>students who finish a concept go straight on to practice, and 87% who finish practice open the quiz.</p>
+          </div>
+          <div class="cs-card cs-result">
+            <p class="cs-card__num">[03] The Up Next button</p>
+            <p class="cs-result__num">66<span>%</span></p>
+            <p>of learners on the learn screens used it. It brings students to 3 in 4 practice starts and 9 in 10 quiz starts.</p>
+          </div>
+          <div class="cs-card cs-result">
+            <p class="cs-card__num">[04] Time to the next activity</p>
+            <p class="cs-result__num">1<span>s</span></p>
+            <p>median from concept to practice (96% start within a minute), and 28 seconds from practice to quiz.</p>
+          </div>
+          <div class="cs-card cs-result">
+            <p class="cs-card__num">[05] Watch vs read</p>
+            <p class="cs-result__num">4<span>×</span></p>
+            <p>On topics with both options, students read the theory about 4× more often than they watch the video.</p>
+          </div>
+        </div>
+        <p class="cs-result__next"><b>Still to measure:</b> adoption of Personalised Theory.</p>
+      </section>
+
+      <!-- Reflection -->
+      <section class="cs-section" id="reflection" aria-labelledby="reflection-title">
+        <p class="eyebrow"><b>[14]</b> Reflection</p>
+        <h2 id="reflection-title" class="section-title">What this project changed for me</h2>
+        <p class="section-sub">This project changed how I approach learning flows. Instead of asking “What screen should come next?”, I started thinking about <strong>what the student is trying to accomplish</strong> at each point in the journey.</p>
+        <blockquote class="cs-quote">
+          <p>The interface should help students progress through learning, rather than make them manage the process.</p>
+        </blockquote>
+      </section>
+
+      <!-- Next case study: PicknPack, on Medium -->
+      <a class="cs-next cs-next--live" href="https://medium.com/@deekshaxsingh/redesigning-picknpack-a-ux-ui-case-study-for-an-e-commerce-website-e2cd00944172" target="_blank" rel="noopener" data-cursor="Read on Medium">
+        <p class="eyebrow"><b>[Next]</b> Case study · on Medium</p>
+        <p class="cs-next__title">Revamping PicknPack for a smoother shopping experience <span>↗</span></p>
+      </a>
+    </main>
+  </div>
+
+  <!-- ============ FOOTER (same as the homepage) ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <p class="eyebrow"><b>◇</b> Let’s talk</p>
+      <h2 class="section-title site-footer__title">Got a messy problem?<br><span>I’d love to untangle it.</span></h2>
+      <p class="section-sub site-footer__sub">Open to product design roles and freelance projects. I reply within a day.</p>
+      <div class="site-footer__ctas">
+        <a class="btn btn--ink site-footer__hello" href="mailto:deekshaxsingh@gmail.com" data-copy-email="deekshaxsingh@gmail.com" data-cursor="Copy email">Say hello ↗</a>
+        <a class="btn btn--secondary" href="https://www.linkedin.com/in/deekshaxsingh" target="_blank" rel="noopener">LinkedIn <img src="../assets/icons/arrow-up-right.svg" alt=""></a>
+        <a class="btn btn--secondary" href="../assets/Deeksha-Resume.pdf" download>Resume ↓</a>
+        <div class="cursor cursor--deeksha site-footer__cursor" aria-hidden="true">
+          <img class="cursor__arrow" src="../assets/icons/cursor-pink.svg" alt="">
+          <span class="cursor__tag">Deeksha</span>
+        </div>
+      </div>
+      <div class="site-footer__bar">
+        <span>© 2026 Deeksha · designed in Figma, built in code</span>
+        <span class="site-footer__clock">Delhi · <time data-clock>--:--</time> IST</span>
+        <a href="../">Back to home ↑</a>
+      </div>
+    </div>
+  </footer>
+  <div class="you-cursor cursor" aria-hidden="true">
+    <img class="cursor__arrow" src="../assets/icons/cursor-you.svg" alt="">
+    <span class="cursor__tag">You</span>
+  </div>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
